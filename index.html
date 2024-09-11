@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/2d0f2967f9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="center-card">
+      <section class="card">
+        <form action="" onclick="checkEmail()">
+          <h2>Login</h2>
+          <div class="btn-box">
+            <label><i class="fa-solid fa-star-of-life"></i>Email</label>
+            <div class="email-field">
+              <input
+                type="email"
+                placeholder="example@gmail.com"
+                class="email"
+              />
+            </div>
+            <span class="error">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <p class="error-text">Please Enter a valid email</p>
+            </span>
+          </div>
+          <div class="btn-box create-password">
+            <label><i class="fa-solid fa-star-of-life"></i>Password</label>
+            <div class="eye-in">
+              <input type="password" id="password-2" />
+              <i
+                class="fa-solid fa-eye-slash"
+                id="hidden-2"
+                onclick="togglePasswordVisibilityTwo()"
+              ></i>
+            </div>
+            <span class="error">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <p class="error-text">
+                Please enter at least 8 characters with number, symbol, small
+                and capital letters.
+              </p>
+            </span>
+          </div>
+
+          <a
+            href="forgot.html"
+            class="link-a"
+            onclick="window.location.href='/forgot.html';"
+            >Forgot password</a
+          >
+
+          <!-- <div class="link-a">
+          </div> -->
+          <div class="btn-log">
+            <a href="core.html">Log in</a>
+          </div>
+          <div class="p-text">
+            <p>
+              Don't have an account?<a
+                href="signup.html"
+                class="link"
+                onclick="window.location.href='/signup.html';"
+              >
+                Sign up</a
+              >
+            </p>
+          </div>
+          <div class="linear-or-1"></div>
+          <div class="fb-color-1">
+            <i class="fa-brands fa-facebook i-fb"></i>
+            <button>Login with facebook</button>
+          </div>
+          <div class="google-logo-1">
+            <button>Login with google</button>
+            <img src="images/logogoogle.png" alt="google" />
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

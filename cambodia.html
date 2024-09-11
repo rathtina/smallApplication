@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>khmercore</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/2d0f2967f9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="top-core">
+      <div class="navigation width-core">
+        <div class="core-nav">
+          <div class="img-logo">
+            <img src="images/core - Copy.png" alt="core" />
+          </div>
+          <h2>core security</h2>
+          <div class="server-click">
+            <p>S8 Server | s8server</p>
+            <i
+              class="fa-solid fa-chevron-down"
+              id="server"
+              onclick="openPopup()"
+            ></i>
+            <!-- <i class="fa-solid fa-server" id="server"></i> -->
+          </div>
+        </div>
+        <div class="icon-nav">
+          <!-- <p>Rathtina Orn</p> -->
+          <div class="head-user">
+            <span class="img-head" onclick="openUser()" id="open-bar"
+              ><img src="images/m_1.jpg" alt="man" />
+              <i class="fa-solid fa-bars-staggered"></i>
+            </span>
+            <div class="zoo-in-out">
+              <div class="img-zoom">
+                <img
+                  src="images/zoom-in (1).png"
+                  alt="zoom-in"
+                  id="in"
+                  onclick="toggle_in_screen()"
+                />
+              </div>
+              <div class="img-zoom">
+                <img
+                  src="images/zoom-out.png"
+                  alt="zoom-out"
+                  id="out"
+                  onclick="toggle_full_screen()"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay-page"></div>
+    </header>
+
+    <div class="aside">
+      <div id="close-bar"><i class="fa-solid fa-xmark"></i></div>
+      <div class="user-aside">
+        <div class="user-img">
+          <img src="images/m_1.jpg" alt="man" />
+        </div>
+        <div class="user-content">
+          <h3>អ៊ន​ រត្ន័ទីណា</h3>
+          <p>ornrathtina123@gmail.com</p>
+        </div>
+      </div>
+
+      <ul class="nav-link">
+        <li>
+          <div class="icon-link">
+            <a href="">
+              <i class="fa-solid fa-language"></i>
+              <span class="link">ភាសា</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li class="actives">
+              <img
+                src="images/circle-flag-of-cambodia-free-png.webp"
+                alt="khmer"
+              />
+              <a href="cambodia.html">ភាសាខ្មែរ</a>
+            </li>
+            <li>
+              <img src="images/english-icon-png-21.jpg" alt="English" />
+              <a href="core.html">ភាសាអង់គ្លេស</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <i class="fa-regular fa-pen-to-square"></i>
+          <a href="editkh.html">កែប្រវត្តិរូប</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-lock"></i>
+          <a href="changekh.html">ដូរលេខសម្ងាត់</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-right-to-bracket"></i>
+          <a href="index.html">ចាកចេញ</a>
+        </li>
+      </ul>
+
+      <!-- <div class="nav-aside">
+        <div class="side-img">
+          <div class="lang-side">
+            <div class="lang">
+              <i class="fa-solid fa-language"></i>
+              <p>Languages</p>
+            </div>
+            <i class="fa-solid fa-angle-down arrow"></i>
+          </div>
+          <div class="container-kheng">
+            <div class="eng-kh">
+              <a href="cambodia.html">
+                <img
+                  src="images/circle-flag-of-cambodia-free-png.webp"
+                  alt="khmer"
+                />
+                <p>Khmer</p>
+              </a>
+              <a href="core.html" class="actives-1">
+                <img src="images/english-icon-png-21.jpg" alt="english" />
+                <p>English</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a class="side-edit" href="edit.html">
+          <i class="fa-solid fa-pen-to-square"></i>
+          <p>Edit Profile</p>
+        </a>
+        <a class="side-change" href="changecore.html">
+          <i class="fa-solid fa-lock"></i>
+          <p>Change Password</p>
+        </a>
+        <a class="side-logout" href="index.html">
+          <i class="fa-solid fa-right-to-bracket"></i>
+          <p href="index.html">Log Out</p>
+        </a>
+      </div> -->
+    </div>
+
+    <div class="left-bar">
+      <!-- <i class="fa-solid fa-xmark" id="close-left"></i> -->
+      <p>ក្រុមហ៊ុន</p>
+      <div class="right-btn">
+        <button class="btn-pre">
+          <img src="images/Dell.png" alt="Dell" />
+          <p>Dell</p>
+        </button>
+        <button class="btn-pre">
+          <img src="images/FedEx.png" alt="FedEx" />
+          <p>FedEx</p>
+        </button>
+        <button class="btn-pre">
+          <img src="images/Macdolnal.png" alt="Macdolnal" />
+          <p>McDonald</p>
+        </button>
+        <button class="btn-pre">
+          <img src="images/Volkswagen.png" alt="Volkswagen" />
+          <p>Volkswagen</p>
+        </button>
+        <button class="btn-pre">
+          <img src="images/target.png" alt="target" />
+          <p>Target</p>
+        </button>
+        <button class="btn-pre">
+          <img src="images/MTV.png" alt="MTV" />
+          <p>MTV</p>
+        </button>
+        <button class="btn-pre">
+          <img src="images/Spotify.png" alt="Spotify" />
+          <p>Spotify</p>
+        </button>
+        <button class="btn-pre">
+          <img src="images/intel.png" alt="intel" />
+          <p>Intel</p>
+        </button>
+        <button class="btn-pre">
+          <img src="images/logogoogle.png" alt="google" />
+          <p>Google</p>
+        </button>
+      </div>
+      <div class="line-core"></div>
+      <div class="con-btn-right">
+        <button class="btn-left" onclick="clearField()">បោះបង់</button>
+      </div>
+    </div>
+
+    <div class="preview" id="preview">
+      <div class="cart-p-i">
+        <p>ក្រុមហ៊ុន</p>
+        <!-- <i class="fa-solid fa-xmark" onclick="closePopup()"></i> -->
+      </div>
+      <div class="btn-scroll">
+        <div class="con-btn">
+          <i class="fa-solid fa-check" id="check"></i>
+          <button class="btn-pre" onclick="onClicking()">
+            <img src="images/Dell.png" alt="Dell" />
+            <p>Dell</p>
+          </button>
+        </div>
+        <div class="con-btn">
+          <i class="fa-solid fa-check" id="check"></i>
+          <button class="btn-pre">
+            <img src="images/FedEx.png" alt="FedEx" />
+            <p>FedEx</p>
+          </button>
+        </div>
+        <div class="con-btn">
+          <i class="fa-solid fa-check" id="check"></i>
+          <button class="btn-pre">
+            <img src="images/Spotify.png" alt="Spotify" />
+            <p>Spotify</p>
+          </button>
+        </div>
+        <div class="con-btn">
+          <i class="fa-solid fa-check" id="check"></i>
+          <button class="btn-pre">
+            <img src="images/Payment.webp" alt="Visa" />
+            <p>Visa</p>
+          </button>
+        </div>
+        <div class="con-btn">
+          <i class="fa-solid fa-check" id="check"></i>
+          <button class="btn-pre">
+            <img src="images/target.png" alt="target" />
+            <p>Target</p>
+          </button>
+        </div>
+        <div class="con-btn">
+          <i class="fa-solid fa-check" id="check"></i>
+          <button class="btn-pre">
+            <img src="images/Volkswagen.png" alt="Volkswagen" />
+            <p>Volkswagen</p>
+          </button>
+        </div>
+        <div class="con-btn">
+          <i class="fa-solid fa-check" id="check"></i>
+          <button class="btn-pre">
+            <img src="images/pepsi.png" alt="/pepsi" />
+            <p>/Pepsi</p>
+          </button>
+        </div>
+        <div class="con-btn">
+          <i class="fa-solid fa-check" id="check"></i>
+          <button class="btn-pre">
+            <img src="images/Netflix.png" alt="Netflix" />
+            <p>Netflix</p>
+          </button>
+        </div>
+        <div class="con-btn">
+          <i class="fa-solid fa-check" id="check"></i>
+          <button class="btn-pre">
+            <img src="images/Nestlé.png" alt="Nestlé" />
+            <p>Nestlé</p>
+          </button>
+        </div>
+        <div class="con-btn">
+          <i class="fa-solid fa-check" id="check"></i>
+          <button class="btn-pre">
+            <img src="images/MTV.png" alt="MTV" />
+            <p>MTV</p>
+          </button>
+        </div>
+        <div class="con-btn">
+          <i class="fa-solid fa-check" id="check"></i>
+          <button class="btn-pre">
+            <img src="images/Macdolnal.png" alt="Macdolnal" />
+            <p>Macdolnal</p>
+          </button>
+        </div>
+        <div class="con-btn">
+          <i class="fa-solid fa-check" id="check"></i>
+          <button class="btn-pre">
+            <img src="images/intel.png" alt="intel" />
+            <p>Intel</p>
+          </button>
+        </div>
+      </div>
+
+      <!-- <div class="icon-server">
+        <i class="fa-solid fa-server"></i>
+        <select name="Server" size="1" id="server">
+          <option value="server" disabled>Server</option>
+          <option value="sntica">Antica</option>
+          <option value="assombra">Assombra</option>
+          <option value="astera">Astera</option>
+          <option value="belluma">Belluma</option>
+        </select>
+      </div> -->
+
+      <div class="line-core"></div>
+      <button class="btn-last-pre" onclick="clearField()">បោះបង់</button>
+    </div>
+    <!-- Preview server -->
+
+    <div class="userCart" id="userCart">
+      <div class="user-title">
+        <img src="images/m_1.jpg" alt="man" />
+        <div class="p-user">
+          <p>អ៊ន​ រត្ន័ទីណា</p>
+          <span>ornrathtina123@gmail.com</span>
+        </div>
+      </div>
+      <span class="icon-lang">
+        <span><i class="fa-solid fa-earth-asia"></i> ភាសា</span>
+        <span class="img-lang">
+          <a href="cambodia.html"
+            ><img
+              src="images/circle-flag-of-cambodia-free-png.webp"
+              alt="cambodia"
+          /></a>
+          <a href="core.html"
+            ><img src="images/english-icon-png-21.jpg" alt="english"
+          /></a>
+        </span>
+      </span>
+      <!-- <div class="edit">
+        
+      </div> -->
+      <a href="editkh.html"
+        ><i class="fa-solid fa-pen-to-square"></i> កែប្រវត្តិរូប</a
+      >
+      <!-- <div class="change">
+        
+      </div> -->
+      <a href="changekh.html"><i class="fa-solid fa-lock"></i> ដូរលេខសម្ងាត់</a>
+      <!-- <div class="logout">
+        
+      </div> -->
+      <a href="index.html"
+        ><i class="fa-solid fa-right-to-bracket"></i> ចាកចេញ</a
+      >
+    </div>
+
+    <section class="case">
+      <div class="container-case">
+        <div class="box-case">
+          <div class="img-box">
+            <img src="images/document.png" alt="document" />
+          </div>
+          <h3>ឯកសារ</h3>
+        </div>
+        <div class="box-case">
+          <div class="img-box">
+            <img src="images/controler.webp" alt="controller" />
+          </div>
+          <h3>ការគ្រប់គ្រង</h3>
+        </div>
+        <div class="box-case">
+          <div class="img-box">
+            <img src="images/entrance.webp" alt="Entrance" />
+          </div>
+          <h3>ច្រកចូល</h3>
+        </div>
+        <div class="box-case">
+          <div class="img-box">
+            <img src="images/human.png" alt="Human" />
+          </div>
+          <h3>មនុស្សធម៌</h3>
+        </div>
+        <div class="box-case">
+          <div class="img-box">
+            <img src="images/invoicing.png" alt="Inviocing" />
+          </div>
+          <h3>វិក័យប័ត្រ</h3>
+        </div>
+        <div class="box-case">
+          <div class="img-box">
+            <img src="images/natt.png" alt="Natt" />
+          </div>
+          <h3>ណាត់</h3>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
